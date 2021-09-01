@@ -10,6 +10,7 @@ p {
 }
 
 h1 {
+    font: 18px "Roboto Mono", Helvetica, Arial, sans-serif;
     font-size: 48px;
     margin-top: 4rem;
     margin-bottom: 1rem;
@@ -125,6 +126,7 @@ a[href="#projects"] {
 #older-projects h2 {
     display: flex;
     align-items: center;
+    line-height: normal;
 }
 
 .project-ext-link {
