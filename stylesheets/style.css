@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 18px Helvetica, Arial, sans-serif;
+}
+
+p {
+    max-width: 70ch;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 1rem;
+}
+
+a {
+    display: block;
+}
+
+a:hover,
+a:focus {
+    opacity: 0.5;
+}
+
+nav {
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: #FFF;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ol {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: auto;
+}
+
+nav li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+a[href="#projects"] {
+    font-size: 24px;
+}
+
+.l-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.card {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 5px #CCC solid;
+    border-radius: var(--default-border-radius);
+}
+
+#hero,
+#projects,
+#university-projects {
+    margin: 1rem;
+    margin-bottom: 0;
+    border-radius: var(--default-border-radius);
+}
+
+.container {
+    max-width: 62.5rem;
+    margin: 0 auto;
+}
+
+#hero {
+    padding: 1rem;
+    padding-bottom: 0;
+    background-color: var(--black-coral);
+    color: #FFF;
+}
+
+#bio {
+    padding-bottom: 2rem;
+}
+
+#hero h1 {
+    margin: 0 auto;
+}
+
+#socials {
+    display: inline-flex;
+    margin-left: auto;
+}
+
+#socials img {
+    display: block;
+    height: 32px;
+    margin: 0 1rem;
+}
+
+#projects h3,
+#university-projects h3 {
+    display: flex;
+    align-items: center;
+}
+
+.project-ext-link {
+    margin-left: 1rem;
+}
+
+.project-ext-link img {
+    display: block;
+    height: 20px;
+}
+
+#footer {
+    background-color: var(--almond);
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+#footer p {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+#footer img {
+    height: 18px;
+    margin-right: 0.5rem;
+}
+
+.attributions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.attribution {
+    margin: 1rem 0;
+}
+
+/* Collapsible from DigitalOcean tutorial: https://www.digitalocean.com/community/tutorials/css-collapsible */
+input[type='checkbox'] {
+    display: none;
+}
+
+.wrap-collabsible {
+    margin: 0 auto;
+    max-width: 70ch;
+}
+
+.lbl-toggle {
+    display: block;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+}
+
+.toggle:checked+.lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked+.lbl-toggle+.collapsible-content {
+    max-height: 350px;
+}
+
+.toggle:checked+.lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+    padding: 0.5rem 0;
+}
+
+.collapsible-content p {
+    margin-bottom: 0;
+}
+
+:root {
+    --default-border-radius: 16px;
+    --black-coral: #646e78ff;
+    --cadet-grey: #8d98a7ff;
+    --almond: #dcccbbff;
+}
