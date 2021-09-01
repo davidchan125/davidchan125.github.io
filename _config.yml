@@ -18,15 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: davidchan125's site
+title: David Chan You Fee's site
 email: davidchan125@hotmail.co.uk
 description: >- # this means to ignore newlines until "baseurl:"
-  A cool site on davidchan125's projects!
+  A cool site on David's projects!
 domain: davidchan125.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://davidchan125.github.io # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: davidchan125
-github_username:  davidchan125
+github_username: davidchan125
 
 # Build settings
 theme: minima

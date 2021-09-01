@@ -11,6 +11,7 @@ p {
 
 h1 {
     font-size: 48px;
+    margin-top: 4rem;
     margin-bottom: 1rem;
 }
 
@@ -25,7 +26,7 @@ a:focus {
 
 nav {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     background-color: #FFF;
 }
 
@@ -66,7 +67,6 @@ a[href="#projects"] {
 
 .card {
     display: block;
-    width: 100%;
     padding: 1rem;
     margin: 1rem 0;
     border: 5px #CCC solid;
@@ -75,7 +75,7 @@ a[href="#projects"] {
 
 #hero,
 #projects,
-#university-projects {
+#older-projects {
     margin: 1rem;
     margin-bottom: 0;
     border-radius: var(--default-border-radius);
@@ -109,11 +109,19 @@ a[href="#projects"] {
 #socials img {
     display: block;
     height: 32px;
-    margin: 0 1rem;
 }
 
-#projects h3,
-#university-projects h3 {
+#socials a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+#older-projects ul,
+#projects ul {
+    padding-left: 0;
+}
+
+#projects h2,
+#older-projects h2 {
     display: flex;
     align-items: center;
 }
@@ -138,6 +146,7 @@ a[href="#projects"] {
     margin-right: auto;
     display: flex;
     align-items: center;
+    max-width: 60rem;
 }
 
 #footer img {
@@ -149,13 +158,13 @@ a[href="#projects"] {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 70ch;
     margin-left: auto;
     margin-right: auto;
+    max-width: 60rem;
 }
 
 .attribution {
-    margin: 1rem 0;
+    margin-bottom: 0.5rem;
 }
 
 /* Collapsible from DigitalOcean tutorial: https://www.digitalocean.com/community/tutorials/css-collapsible */
@@ -165,7 +174,7 @@ input[type='checkbox'] {
 
 .wrap-collabsible {
     margin: 0 auto;
-    max-width: 70ch;
+    max-width: 60rem;
 }
 
 .lbl-toggle {
