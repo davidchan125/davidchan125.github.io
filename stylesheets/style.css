@@ -1,3 +1,7 @@
+ul {
+    list-style-type: "  -   ";
+}
+
 #socials {
     top: calc(-1rem + -1.5rem);
     right: 1rem;
