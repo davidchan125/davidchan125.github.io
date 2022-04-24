@@ -7,8 +7,28 @@ ul {
     right: 1rem;
     padding: 1rem;
     background-color: white;
+    border-radius: .25rem;
 }
 
 #socials img {
     height: 3rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1c1c1c;
+        color: #e6e7e8;
+    }
+
+    .card,
+    #socials {
+        background: #1c1c1c;
+        color: #e6e7e8;
+    }
+
+    #socials {
+        background: #1f1f1f;
+        color: #e6e7e8;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    }
 }
